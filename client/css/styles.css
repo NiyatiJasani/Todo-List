@@ -2,7 +2,7 @@
         -webkit-border-radius: 0 !important;
         -moz-border-radius: 0 !important;
         border-radius: 0 !important;
-        font-family: calibri;
+        font-family: calibri body;
 }
 
 .todo .btn {
