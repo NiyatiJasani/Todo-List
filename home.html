@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+
+<head>
+        <title>Todo App</title>
+        <link rel="stylesheet" type="text/css" href="client/css/styles.css">
+
+        <script src="/angular.js"></script>
+        <script src="/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+
+        <script type="text/javascript" src="/main.js"></script>
+        <script type="text/javascript" src="client/js/factory.js"></script>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <style>
+                html {
+                        overflow-y: scroll;
+                }
+                
+                body {
+                        padding-top: 50px;
+                }
+                
+                #todo-list {
+                        margin-bottom: 30px;
+                }
+                
+                #todo-form {
+                        margin-bottom: 50px;
+                }
+        </style>
+</head>
+
+<body ng-app="todoApp">
+        <div class="container">
+                <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Todo Application</a>
+                </div>
+                <hr/>
+                <ul class="nav navbar-nav navbar-centre">
+                        <li><a href="#/">Index</a></li>
+                        <li><a href="#/todos">Todos</a></li>
+                </ul>
+        </div>
+        <div class="container">
+                <h1>Todo App</h1>
+                <hr/>
+                <ng-view></ng-view>
+        </div>
+
+</body>
+
+</html>
